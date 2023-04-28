@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e7b209e158.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#work"> Portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer &ltCoder&gt Pentester</p>
+            <h1>Hi, I'm <span>Surya Suresh</span> <br>From India</h1>
+        </div>
+    </div>
+</div>
+
+<!---------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Computer Science Bachelor's Graduate and cybersecurity enthusiast with
+                    the high ambition of becoming an Ethical hacker/pentester. I'm able to
+                    handle working under pressure as well as communicate and collaborate
+                    seamlessly in a teamwork environment.
+                    My passion for security stems from my curious and persistent nature,
+                    constantly learning through security podcasts, CTF write-ups, and bug
+                    bounties</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Projects')">Projects undertaken</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>PROGRAMMING LANGUAGES</span><br>
+                            <ol>
+                                <li>Python</li>
+                                <li>HTML & CSS </li>
+                                <li>JavaScript</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span>SKILLS/PROGRAM</span>
+                            <ol>
+                                <li>Docker</li>
+                                <li>Git</li>
+                                <li>Footprinting & Networking</li>
+                                <li>Burpsuite</li>
+                                <li>Cisco Packet Trace</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span>DATABASE</span>
+                            <ol>
+                                <li>MySQL</li>
+                                <li>NoSQL</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span>OPERATING SYSTEMS</span>
+                            <ol>
+                                <li>Windows</li>
+                                <li>Linux(Kali & Ubuntu)</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Projects">
+                    <ul>
+                        <li>
+                            <span>Personal Portfolio Website (10/2022 - 11/2022)</span><br>
+                            <ol>
+                                <li>Interactive website using HTML, CSS, and javascript.</li>
+                                <li>Storing input data to google sheets.</li>
+                            </ol>
+                        </li>
+
+                        <li>
+                            <span>Create a custom/proof of concept File Integrity Monitor (FIM) ("Cyber Security Project")</span><br>
+                            <ol>
+                                <li>Created an integrity baseline of target files/folders using the SHA-512 hashing algorithm</li>
+                                <li>Continuously made comparison of actual files vs baseline, raised alerts f any deviations occurred</li>
+                                <li>Sent alert to allow further investigation of potential compromise</li>
+                            </ol>
+                        </li>
+
+                        <li>
+                            <span>Stock Price Prediction by using ML (08/2021 - 02/2022)</span>
+                            <ol>
+                                <li>Stack LSTM based machine learning model</li>
+                                <li>Use TensorFlow and visualize predicted data</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span>Automatic Text Summarization (08/2021)</span>
+                            <ol>
+                                <li>Uses GloVe: Global Vectors for Word Representation</li>
+                                <li>Summarization of articles using the TextRank Algorithm</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span>Multithreaded Python Program</span>
+                            <ol>
+                                <li>Multithreaded Program for Producer-Consumer problem.</li>
+                                <li>Web Scraping texts from Multiple URLs using Multithreading</li>
+                                <li>Socket communication that implements a leading election algorithm such as a ring</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li>BACHELORS IN COMPUTER SCIENCE <br><span> Nagindas Khandwala College, Malad(w)</span> <br> <span>2019 - 2022</span></li>
+                        <li> Maharashtra State Board of Secondary and Higher Secondary Education (MSBSHSE) <br><span> Swami Vivekanand junior college, kandivali (w)</span> <br> <span>2017 - 2019</span></li>
+                        <li>SSC<br><span> Mother Terasa Secondary English School</span> <br> <span>2017</span></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="about-col-1"> 
+                <img src="images/user.png"> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------my work------------------->
+<div id="work">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div>
+                <img src="images/powershell.png" class="icon">
+                <h2>powershell Project</h2>
+                <ul>
+                <li><a href="https://github.com/SuryaSuresh20/-FIM-file-integrity-monitoring">File Integrity Monitor     <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Project</h2>
+                <ul>
+                    <li><a href="https://github.com/SuryaSuresh20/pythonprojects">Stock Price Prediction by using ML     <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>html, css, javascript Project</h2>
+                <ul>
+                <li><a href="https://github.com/SuryaSuresh20/personal_portfolio_website-">Personal Portfolio Website     <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>suryasuresh.p20@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 7977446226</p>
+                <div class="soical-icon">
+                    <a href="https://www.linkedin.com/in/surya-suresh-p/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/SuryaSuresh20"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://tryhackme.com/p/SYKON"><i class="fa-regular fa-file-code"></i></a>
+                </div>
+                <a href="images/Resume_Surya_Suresh .pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Surya Suresh <i class="fa-regular fa-lemon"></i></p>
+    </div>
+
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 
+
+    }
+
+</script>
+<!---https://script.google.com/u/5/home/projects/1Ixzk6iXfQEZ6PAKRdCMGZcP6y9Nh2gs_gbQ7w_IdRXgJQ66pPUEqlv4B/edit -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7uzcqcp2RJVJwTIHIHKnMl_D_QseKWzRJf9ppAH8eoRtMOcJXesdnvfhupvU_oyCf/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML =" Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html> 
